@@ -10,9 +10,6 @@ def get_data(namespace_id:str, height:int):
     print(base64.b64decode(data).decode('utf-8'))
     return data
 
-# get_data('756f60cbe7bf5401',32992)
-
-
 n_id = '756f60cbe7bf5401'
 
 def post_data(namespace_id, data, gas_limit=70000):
