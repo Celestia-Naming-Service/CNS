@@ -20,5 +20,4 @@ def post_data(namespace_id, data, gas_limit=70000):
     get_data('756f60cbe7bf5401',r.json()['height'])
 
 
-
 post_data(n_id, "Yo World")
