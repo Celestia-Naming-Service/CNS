@@ -17,7 +17,7 @@ def post_data(namespace_id, data, gas_limit=70000):
     d = data.hex()
     r = requests.post(f'http://localhost:26658/submit_pfd', json={"namespace_id":namespace_id,"data":d,"gas_limit":gas_limit})
     pprint(r.json()) 
-    get_data('756f60cbe7bf5401',r.json()['height'])
+    print(get_data('756f60cbe7bf5401',r.json()['height']))
 
 
 post_data(n_id, "Yo World")
