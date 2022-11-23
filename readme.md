@@ -21,7 +21,7 @@ ENV PATH="/usr/local/go/bin:${PATH}"
 
 RUN apk update
 RUN apk add curl tar wget clang pkgconfig libressl-dev jq alpine-sdk bash 
-RUN rm -rf celestia-node && git clone https://github.com/celestiaorg/celestia-node.git && cd celestia-node && git checkout tags/v0.4.2 && make install && make cel-key && celestia light init
+RUN rm -rf celestia-node && git clone https://github.com/celestiaorg/celestia-node.git && cd celestia-node && git checkout tags/v0.5.0-rc5 && make install && make cel-key && celestia light init
 ```
 
 Lastly, setup and fund the wallet on the node using this [guide](https://docs.celestia.org/developers/wallet/#fund-a-wallet) 📚
