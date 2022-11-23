@@ -13,7 +13,8 @@ The easiest way is to get a docker container running using this dockerfile 🐳
 FROM alpine:latest
 FROM golang:1.19.1-alpine
 
-EXPOSE 26658:26658
+EXPOSE 26659
+EXPOSE 26658
  
 COPY --from=golang:1.19.1-alpine /usr/local/go/ /usr/local/go/
  
