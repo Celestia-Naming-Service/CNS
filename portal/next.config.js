@@ -3,4 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  async exportPathMap(defaultPathMap) {
+    return {
+      "/api/data": { page: "/api/data" },
+    };
+  },
+};
