@@ -1,6 +1,6 @@
 FROM alpine:latest
 FROM golang:1.19.1-alpine
- 
+
 COPY --from=golang:1.19.1-alpine /usr/local/go/ /usr/local/go/
  
 ENV PATH="/usr/local/go/bin:${PATH}"
