@@ -21,7 +21,7 @@ def post_data(namespace_id, data, gas_limit=70000):
     print(get_data('756f60cbe7bf5401',r.json()['height']))
 
 # %%
-post_data('756f60cbe7bf5401', "{'Pratham': 'prasoon.cel'}")
+post_data('756f60cbe7bf5401', "{'Pratham': 'prasoon.tia'}")
 
 # %%
 # {"type": "REGISTER_NAME", "payload": {"name": "Pratham"}, signature: "123"}
